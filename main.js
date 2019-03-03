@@ -7,8 +7,10 @@ const selectionSort = (a) => {
             if (a[j] < a[min]) {
                 min = j;
             }
-        }        
-        swap(a, i, min);
+        }  
+        if (min !== i) {      
+            swap(a, i, min);
+        }
     }
 };
 
